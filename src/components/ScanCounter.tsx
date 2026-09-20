@@ -1,4 +1,5 @@
 import React from 'react';
+import { ScanCounterProps } from '../types/student';
 
 import {
   StyleSheet,
@@ -7,15 +8,6 @@ import {
   Pressable,
 } from 'react-native';
 
-interface ScanCounterProps {
-  count: number;
-  onScan: () => void;
-  onReset: () => void;
-  onSuspend: () => void;
-  isActive: boolean;
-  showPeer: boolean;
-  onPeerDemo: () => void;
-}
 
 export const ScanCounter: React.FC<ScanCounterProps> = ({
   count,

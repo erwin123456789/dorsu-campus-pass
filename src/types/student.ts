@@ -19,3 +19,13 @@ export interface StudentCardProps {
   student: StudentProfile;
   isActive: boolean;
 }
+
+export interface ScanCounterProps {
+  count: number;
+  onScan: () => void;
+  onReset: () => void;
+  onSuspend: () => void;
+  isActive: boolean;
+  showPeer: boolean;
+  onPeerDemo: () => void;
+}
