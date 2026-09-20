@@ -12,27 +12,11 @@ import {
 import { StudentCard } from './src/components/StudentCard';
 import { ScanCounter } from './src/components/ScanCounter';
 
-import { StudentProfile } from './src/types/student';
 
-const mainStudent: StudentProfile = {
-  name: 'ERWIN T. COMENDADOR',
-  idNumber: '2023-2207',
-  program: 'BS in Information Technology (BSIT)',
-  yearLevel: '3rd Year',
-  section: 'Section F',
-  avatarUrl: 'https://i.pravatar.cc/150?img=11',
-  campus: 'Main Campus (Guang-guang, Mati City)',
-};
-
-const peerStudent: StudentProfile = {
-  name: 'MARIA CLARA S. SANTOS',
-  idNumber: '2024-2345',
-  program: 'BS in Information Technology (BSIT)',
-  yearLevel: '2nd Year',
-  section: 'Section B',
-  avatarUrl: 'https://i.pravatar.cc/150?img=47',
-  campus: 'Main Campus (Guang-guang, Mati City)',
-};
+import {
+  mainStudent,
+  peerStudent,
+} from './src/data/students';
 
 export default function App() {
 
