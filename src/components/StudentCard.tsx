@@ -6,13 +6,8 @@ import {
   Image,
 } from 'react-native';
 
-import { StudentProfile } from '../types/student';
+import { StudentCardProps } from '../types/student';
 import { StatusBadge } from './StatusBadge';
-
-interface StudentCardProps {
-  student: StudentProfile;
-  isActive: boolean;
-}
 
 export const StudentCard: React.FC<StudentCardProps> = ({
   student,
