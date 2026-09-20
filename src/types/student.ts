@@ -6,6 +6,7 @@ export interface StudentProfile {
   section: string;
   avatarUrl: string;
   campus: string;
+  email?: string;
 }
 
 export interface StatusBadgeProps {
