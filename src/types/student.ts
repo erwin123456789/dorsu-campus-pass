@@ -11,6 +11,8 @@ export interface StudentProfile {
 
 export interface StatusBadgeProps {
   isActive: boolean;
+  activeLabel?: string;
+  suspendedLabel?: string;
 }
 
 export interface StudentCardProps {

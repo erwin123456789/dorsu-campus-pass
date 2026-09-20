@@ -4,6 +4,8 @@ import { StatusBadgeProps } from '../types/student';
 
 export const StatusBadge: React.FC<StatusBadgeProps> = ({
   isActive,
+  activeLabel = 'STATUS: VERIFIED ACTIVE PASS',
+  suspendedLabel = 'STATUS: PASS SUSPENDED',
 }) => {
   return (
     <View
@@ -31,9 +33,7 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({
             : styles.suspendedText,
         ]}
       >
-        {isActive
-          ? 'STATUS: VERIFIED ACTIVE PASS'
-          : 'STATUS: PASS SUSPENDED'}
+        {isActive ? activeLabel : suspendedLabel}
       </Text>
     </View>
   );
